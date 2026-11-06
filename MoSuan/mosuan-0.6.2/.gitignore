@@ -1,0 +1,25 @@
+node_modules/
+.npm-cache/
+dist/
+.env
+.local/
+FreeDeepseekAPI-main/
+FreeDeepseekAPI-main.zip
+playwright-report/
+test-results/
+*.log
+*.tsbuildinfo
+.local/
+android/.gradle/
+android/local.properties
+android/**/build/
+android/app/src/main/assets/public/
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+
+# Release downloads and generated verification output
+/artifacts/android/
+/artifacts/verification/*
+!/artifacts/verification/reader-profile-before.json
+!/artifacts/verification/reader-profile-after.json
+!/artifacts/verification/reader-profile-production-startup.json

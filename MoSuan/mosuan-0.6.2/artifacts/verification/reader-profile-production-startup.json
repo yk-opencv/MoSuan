@@ -1,0 +1,8 @@
+{
+  "cpuSlowdown": 4,
+  "readerReadyMs": 335,
+  "worker": {
+    "blocks": 1743,
+    "elapsedMs": 77
+  }
+}

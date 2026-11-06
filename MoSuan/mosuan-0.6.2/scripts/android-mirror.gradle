@@ -1,0 +1,13 @@
+def mirror = System.getenv('MOSUAN_MAVEN_MIRROR')
+if (mirror) {
+    def mirrorUri = new URI(mirror)
+    if (mirrorUri.scheme != 'https' || !(mirrorUri.host in ['repo.huaweicloud.com', 'maven.aliyun.com'])) {
+        throw new GradleException('Use an HTTPS Maven mirror from the configured build mirror list')
+    }
+    gradle.projectsLoaded {
+        gradle.rootProject.allprojects { project ->
+            project.buildscript.repositories.maven { url = mirror }
+            project.repositories.maven { url = mirror }
+        }
+    }
+}

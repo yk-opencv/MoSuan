@@ -1,0 +1,31 @@
+{
+  "appId": "cn.mosuan.reader",
+  "version": "0.6.2",
+  "minSdk": 24,
+  "targetSdk": 36,
+  "appLabel": "墨算",
+  "sizeBytes": 5123589,
+  "sha256": "a817f6a25ffb8af6a878faf149996e91944de380bb626cc3161cd3ccb446187f",
+  "signatureVerified": true,
+  "signatureSchemes": [
+    "Verified using v1 scheme (JAR signing): false",
+    "Verified using v2 scheme (APK Signature Scheme v2): true",
+    "Verified using v3 scheme (APK Signature Scheme v3): false",
+    "Verified using v3.1 scheme (APK Signature Scheme v3.1): false",
+    "Verified using v4 scheme (APK Signature Scheme v4): false"
+  ],
+  "signerSha256": "26a8cf12a37246d5f90448eedd16b10e3750e0b2049f0881e709e7c07fcc7521",
+  "permissions": [
+    "android.permission.INTERNET",
+    "cn.mosuan.reader.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "debugBuild": false,
+  "bundledMathJax": true,
+  "bundledKaTeXFonts": true,
+  "privateCredentialFilesBundled": false,
+  "physicalDeviceTested": false,
+  "realPhoneWebConversationTested": false,
+  "nativeWebApiClient": true,
+  "encryptedNativeCredentials": true,
+  "frontendTests": "Vite production build and Vitest (72/72) passed on 0.6.2. APK frontend assets match dist byte for byte and include the formula repair worker."
+}

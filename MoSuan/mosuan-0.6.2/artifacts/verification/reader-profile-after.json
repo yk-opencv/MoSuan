@@ -1,0 +1,54 @@
+{
+  "stage": "after",
+  "device": "Edge desktop, 390 × 844 viewport, CDP 4× CPU slowdown",
+  "inputBytes": 186023,
+  "characters": 138796,
+  "parse": {
+    "samplesMs": [
+      104,
+      71,
+      60,
+      48,
+      45,
+      46
+    ],
+    "blocks": 1743
+  },
+  "firstReadingMs": 9486,
+  "scroll": {
+    "framesMs": [
+      449,
+      400,
+      158,
+      201,
+      362,
+      143,
+      222,
+      164,
+      239,
+      94,
+      240,
+      174,
+      204,
+      158,
+      224,
+      153
+    ],
+    "maxMounted": 14
+  },
+  "streaming": {
+    "elapsedMs": 6061,
+    "mainThreadLongTasks": 32,
+    "longestTaskMs": 393,
+    "totalLongTaskMs": 4189
+  },
+  "exports": {
+    "pdfLayoutMs": 17845,
+    "wordMs": 29662,
+    "pdfHasLastMarker": true,
+    "pdfHasPicture": true,
+    "wordBytes": 57875,
+    "wordSourceFallbacks": 0,
+    "wordImageFallbacks": 0
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "physicalDeviceTested": false,
+  "cases": [
+    {
+      "file": "01-UTF8.md",
+      "bytes": 1101,
+      "sha256": "5ddddabfa414f08518f8b9e16c619518cc37b464f4b4daaf05462f2fdfb6a173",
+      "requested": "auto",
+      "expectedEncoding": "utf-8",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "02-UTF8-BOM.md",
+      "bytes": 1104,
+      "sha256": "c2eb8dc8898f9f482039f6bb02cb76da3ebac4c94edd3e86291cb542a6cdac49",
+      "requested": "auto",
+      "expectedEncoding": "utf-8",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "03-GBK.md",
+      "bytes": 855,
+      "sha256": "f1ff808ba47caeef810aa0c5b7461988a560420c9def775971334ce3bd5d6676",
+      "requested": "auto",
+      "expectedEncoding": "gb18030",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "04-GB18030.md",
+      "bytes": 936,
+      "sha256": "3f06171a807615af2ff230893f88b36d263a77d8c3ca00d27caf854108acf67d",
+      "requested": "auto",
+      "expectedEncoding": "gb18030",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\nGB18030 四字节扩展字符：😀 𠀀。字形取决于手机字体；导出后应保留这两个字符。\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "05-UTF16LE-BOM.md",
+      "bytes": 1220,
+      "sha256": "fd1ff09669546a3659e416cb4a620d3a13a6eadae655765b2ab131768a0d1654",
+      "requested": "auto",
+      "expectedEncoding": "utf-16le",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "06-UTF16BE-BOM.md",
+      "bytes": 1220,
+      "sha256": "5a0dfc043fdce75f23ba7d458b2950f9fc506664ea4de57a43a107e912396487",
+      "requested": "auto",
+      "expectedEncoding": "utf-16be",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "07-UTF16LE-noBOM.md",
+      "bytes": 1218,
+      "sha256": "aceaf167f314fd99f919165d19845e97837b874009c0f7609bcffa845da8377b",
+      "requested": "auto",
+      "expectedEncoding": "utf-16le",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "08-UTF16BE-noBOM.md",
+      "bytes": 1218,
+      "sha256": "516ea6b21dfefcaaf502067677d0ceeb936438e5381b201fa30b2ff0c808fc89",
+      "requested": "auto",
+      "expectedEncoding": "utf-16be",
+      "expectedText": "# 墨算手机中文编码验证\n\n## 中文检查：TOP-ENCODING\n\n你好，世界！数学笔记：积分、极限、幂级数、矩阵、傅里叶变换。\n\n标点应保持：，。！？；：“中文”（括号）【方括号】\n\n**中文加粗应正常**，*中文斜体应正常*。数字：0123456789；英文：Markdown / LaTeX。\n\n## 四种公式分隔符\n\n美元行内公式：$x^2+y^2=1$。\n\n反斜杠行内公式：\\(\\lim_{x\\to0}\\frac{\\sin x}{x}=1\\)。\n\n$$\n\\int_0^1 x\\,dx=\\frac{1}{2}\n$$\n\n\\[\nA=\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix},\\qquad \\det(A)=-2\n\\]\n\n## 代码保护\n\n下面的代码应该保留美元符号、反斜杠和源码，不转换成公式：\n\n```tex\n$x^2+y^2=1$\n\\[\\frac{1}{2}\\]\n```\n\n行内代码 `$x^2$` 也应该保留源码。\n\n## 检查表\n\n| 检查项 | 预期 |\n| --- | --- |\n| 中文 | 数学笔记、积分、矩阵 |\n| 行内公式 | $a_n=\\frac{1}{n^2}$ |\n| 文本 | 保存后重新打开仍然一致 |\n\n## 全文末尾：ENCODING-FINAL-OK\n\n看到这一行说明该小文件已完整读取。这里只测试编码与基本排版，不代表长文压力测试通过。\n",
+      "warning": false
+    },
+    {
+      "file": "09-Big5-manual.md",
+      "bytes": 205,
+      "sha256": "1c92f3652f03eb7766ddb9ebed236fec4799b515162fdb39f7233e423cf140a1",
+      "requested": "big5",
+      "expectedEncoding": "big5",
+      "expectedText": "# Big5 繁體中文驗證\n\n中文測試：數學公式、積分、矩陣、筆記保存。\n\n請手動選擇「Big5（繁体中文）」，此後以上文字應正常顯示。\n\n公式：$x^2+y^2=1$。\n\n\\[\n\\int_0^1 x\\,dx=\\frac{1}{2}\n\\]\n\n## 全文末尾：BIG5-FINAL-OK\n",
+      "warning": false
+    },
+    {
+      "file": "10-damaged-expected-error.md",
+      "bytes": 19,
+      "sha256": "d01e103d8f9fe0da993d226e2873d9ad002ddd10d95915c47fffb0d1e4195857",
+      "requested": "auto",
+      "expectedError": true
+    },
+    {
+      "file": "11-existing-replacement.md",
+      "bytes": 113,
+      "sha256": "cdee915334e2de30b80d01490eea975720a1b3dea6c7520fdb92536c355685c6",
+      "requested": "auto",
+      "expectedEncoding": "utf-8",
+      "expectedText": "# 原文已有替代字符\n\n这一行的 � 是测试数据，应该提示无法还原。\n\nREPLACEMENT-FINAL-OK\n",
+      "warning": true
+    }
+  ]
+}
